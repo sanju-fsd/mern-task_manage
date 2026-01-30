@@ -1,8 +1,9 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api"
+  baseURL: "https://mern-task-manage-glxf.onrender.com/api",
 });
+
 
 API.interceptors.request.use((req) => {
   const token = localStorage.getItem("token");
